@@ -1,0 +1,5 @@
+[
+  { "id": "1", "title": "Download Manager", "category": "Practical", "tags": ["networking"], "done": false },
+  { "id": "10", "title": "To-Do List Application", "category": "Practical", "tags": ["web", "cli"], "done": false },
+  { "id": "106", "title": "Tetris", "category": "Games", "tags": ["gui"], "done": false }
+]
