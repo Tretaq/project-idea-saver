@@ -46,11 +46,40 @@ export default function App(){
                 alert("Invalid file");
               }
             };
-            
+            return(
+              <div className="app">
+                <h1>Project Saver</h1>
+                <AddForm onAdd={add} />
+
+                <div className="toolbar">
+                  <input placeholder='Search...' value={query} onChange={e => setQuery(e.target.value)} />
+                  {(["all","todo","done"] as Filter[]).map(f => (
+                    <button key={f} className={filter === f ? "active" : ""} onClick={() => setFilter(f)}>
+                      {f}
+                    </button>
+                  ))}
+                  {activeTag && <button onClick={() => setActiveTag(null)}>#{activeTag} X</button>}
+                </div>
+                
+                <div className='grid'>
+                  {visible.map(p => (
+                      <ProjectCard key={p.id} project={p} onToggle={toggle} onDelete={remove} onTagClick={setActiveTag} />
+                  ))}
+                  {visible.length === 0 && <p>No projects found.</p>}
+                </div>
+                <div className='toolbar'>
+                  <button onClick={exportJson}>Export JSON</button>
+                  
+
+                </div>
+
+
+              </div>
+            )
             
 
           
-          return (<>asda</>)
+            
         }
 
 

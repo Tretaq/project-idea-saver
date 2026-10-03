@@ -9,6 +9,7 @@ type Props = {
 };
 
 export default function ProjectCard({project , onToggle, onDelete, onTagClick }: Props){
+    return(
     <div className={`card ${project.done ? "done" : ""}`}>
         <div className="card-head">
         <input type="checkbox" checked={project.done} onChange={() => onToggle(project.id)} />
@@ -22,4 +23,5 @@ export default function ProjectCard({project , onToggle, onDelete, onTagClick }:
         ))}
         </div>
     </div>
+    );
 }
