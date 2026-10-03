@@ -1,4 +1,4 @@
-import React, { useState, type SyntheticEvent} from "react";
+import { useState, type SyntheticEvent} from "react";
 
 type Props = {onAdd: (title: string, category: string, tags: string[]) => void};
 export default function AddForm({onAdd }: Props){
