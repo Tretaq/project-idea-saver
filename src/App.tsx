@@ -2,25 +2,39 @@ import {useEffect, useMemo, useState} from 'react';
 import type {Project , Filter} from './types'
 import {loadProjects, saveProjects} from './storage'
 import AddForm from './components/AddForm';
-import
-
-
-
-
-
-
+import ProjectCard from './components/ProjectCard';
 import './App.css'
 
-function App() {
+export default function App(){
+          const [projects, setProjects] = useState<Project[]>(loadProjects());
+          const [query, setQuery] = useState<string>("");
+          const [filter,setFilter] = useState<Filter>("all");
+          const [activeTag, setActiveTag] = useState<string | null>(null);
 
-  return (
-    <>
-        
-    </>
-  )
-}
+          useEffect(() => {saveProjects(projects)}, [projects]);// zapisuje do local storage jak się zmieni projects :< WHY
+          const add = (title: string , category: string, tags: string[]) => 
+          {
+            setProjects(p => [...p, {id: crypto.randomUUID(), title, category, tags, done:false}])
+          }
+          const toggle = (id: string) => {
+            setProjects(p => p.map(x => (x.id === id? {...x, done: !x.done} : x)))
+          }
+          const remove = (id:string) => setProjects(p => p.filter(x => x.id !== id));
 
-export default App
+            const visible = useMemo(() => {
+              const q = query.toLowerCase();
+              return projects.filter(p =>
+                (filter === "all" || (filter === "done") === p.done) &&
+                (!activeTag || p.tags.includes(activeTag)) &&
+                (p.title + " " + p.category + " " + p.tags.join(" ")).toLowerCase().includes(q)
+              );
+            }, [projects, query, filter, activeTag]);
+
+          
+          return (<>asda</>)
+        }
+
+
 
 // TO DO read and save project form jason with tags like game itp 
 // be able to add and delete projects  also search bar 
