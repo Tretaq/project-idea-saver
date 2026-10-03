@@ -69,7 +69,8 @@ export default function App(){
                 </div>
                 <div className='toolbar'>
                   <button onClick={exportJson}>Export JSON</button>
-                  
+                  <input type="file" accept='.json' onChange={e => e.target.files?.[0] && importJson(e.target.files[0])} />
+
 
                 </div>
 
