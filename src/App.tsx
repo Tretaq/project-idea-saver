@@ -29,6 +29,8 @@ export default function App(){
                 (p.title + " " + p.category + " " + p.tags.join(" ")).toLowerCase().includes(q)
               );
             }, [projects, query, filter, activeTag]);
+            
+            
 
           
           return (<>asda</>)
