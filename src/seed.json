@@ -1,5 +1,1315 @@
 [
-  { "id": "1", "title": "Download Manager", "category": "Practical", "tags": ["networking"], "done": false },
-  { "id": "10", "title": "To-Do List Application", "category": "Practical", "tags": ["web", "cli"], "done": false },
-  { "id": "106", "title": "Tetris", "category": "Games", "tags": ["gui"], "done": false }
+  {
+    "id": "1",
+    "title": "Download Manager",
+    "category": "Practical",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "2",
+    "title": "Make an elastic producer/consumer task queue.",
+    "category": "Practical",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "3",
+    "title": "IRC Client",
+    "category": "Practical",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "4",
+    "title": "Markov Chain Sentence Generator",
+    "category": "Practical",
+    "tags": [
+      "easy"
+    ],
+    "done": false,
+    "note": "Include Shitposting Capabilities"
+  },
+  {
+    "id": "5",
+    "title": "English Sentence Parser that Points to the Context of a Sentence",
+    "category": "Practical",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "6",
+    "title": "MIDI Player + Editor",
+    "category": "Practical",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "7",
+    "title": "Stock Market Simulator Using Yahoo Spreadsheet Data",
+    "category": "Practical",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "8",
+    "title": "Parametric/Graphic Equalizer for .wav files",
+    "category": "Practical",
+    "tags": [
+      "difficult"
+    ],
+    "done": false,
+    "note": "Make it real-time"
+  },
+  {
+    "id": "9",
+    "title": "Graphing Calculator",
+    "category": "Practical",
+    "tags": [
+      "medium"
+    ],
+    "done": false,
+    "note": "BONUS: Graph the Function's Derivatives"
+  },
+  {
+    "id": "10",
+    "title": "To-Do List Application",
+    "category": "Practical",
+    "tags": [
+      "easy"
+    ],
+    "done": false,
+    "note": "Web app or CLI"
+  },
+  {
+    "id": "11",
+    "title": "Verlet Integration",
+    "category": "Practical",
+    "tags": [
+      "difficult"
+    ],
+    "done": false,
+    "note": "Verlet Cloth"
+  },
+  {
+    "id": "12",
+    "title": "TCP/UDP Chat Server + Client",
+    "category": "Practical",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "13",
+    "title": "Music Streaming",
+    "category": "Practical",
+    "tags": [
+      "difficult"
+    ],
+    "done": false
+  },
+  {
+    "id": "14",
+    "title": "Shazam",
+    "category": "Practical",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "15",
+    "title": "Chatbot",
+    "category": "Practical",
+    "tags": [
+      "easy"
+    ],
+    "done": false,
+    "note": "with conversation retention"
+  },
+  {
+    "id": "16",
+    "title": "Curses Text Editor",
+    "category": "Practical",
+    "tags": [
+      "medium"
+    ],
+    "done": false,
+    "note": "with Emacs / Vim Keybindings"
+  },
+  {
+    "id": "17",
+    "title": "Paint Clone",
+    "category": "Practical",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "18",
+    "title": "Image to ASCII Art",
+    "category": "Practical",
+    "tags": [
+      "easy"
+    ],
+    "done": false
+  },
+  {
+    "id": "19",
+    "title": "Booru (Image Board) Image Downloader",
+    "category": "Practical",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "20",
+    "title": "Image Converter",
+    "category": "Practical",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "21",
+    "title": "ID3 Reader",
+    "category": "Practical",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "22",
+    "title": "Sound Synthesis (Sine, square, sawtooth, etc...)",
+    "category": "Practical",
+    "tags": [
+      "difficult"
+    ],
+    "done": false,
+    "note": "\"Fuck You\" mode: Realtime MIDI Playback with Custom Instruments"
+  },
+  {
+    "id": "23",
+    "title": "C++ IDE Plugin for Sublime/Atom",
+    "category": "Practical",
+    "tags": [
+      "medium"
+    ],
+    "done": false,
+    "note": "Auto-Complete, Go-To Symbol Declaration and Definition using Clang's AST"
+  },
+  {
+    "id": "24",
+    "title": "Simple Version Control System supporting checkout, commit, unlocking, and per-file configuration of number of revisions kept",
+    "category": "Practical",
+    "tags": [
+      "medium"
+    ],
+    "done": false,
+    "note": "commit with commit message"
+  },
+  {
+    "id": "25",
+    "title": "Imageboard (imagine vichan)",
+    "category": "Practical",
+    "tags": [
+      "easy"
+    ],
+    "done": false
+  },
+  {
+    "id": "26",
+    "title": "Password Manager",
+    "category": "Practical",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "27",
+    "title": "Create a Torrent Client (CLI or GUI)",
+    "category": "Practical",
+    "tags": [
+      "difficult"
+    ],
+    "done": false
+  },
+  {
+    "id": "28",
+    "title": "Booru Client",
+    "category": "Practical",
+    "tags": [
+      "difficult"
+    ],
+    "done": false
+  },
+  {
+    "id": "29",
+    "title": "Key Press Bot",
+    "category": "Practical",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "30",
+    "title": "IP/URL Obfuscation",
+    "category": "Practical",
+    "tags": [
+      "medium"
+    ],
+    "done": false,
+    "note": "http://www.pc-help.org/obscure.htm"
+  },
+  {
+    "id": "31",
+    "title": "Radix Base Converter",
+    "category": "Practical",
+    "tags": [
+      "medium"
+    ],
+    "done": false,
+    "note": "Given a radix base, convert it to decimal"
+  },
+  {
+    "id": "32",
+    "title": "Chan aggregator",
+    "category": "Practical",
+    "tags": [
+      "difficult"
+    ],
+    "done": false,
+    "note": "Let's user view various boards from different 'chans'. Bonus: Add 4ChanX and Archiving Functionality"
+  },
+  {
+    "id": "33",
+    "title": "Encrypt a File, and Upload it online",
+    "category": "Practical",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "34",
+    "title": "Make a Text Editor that autosaves and includes the date in the filename",
+    "category": "Practical",
+    "tags": [
+      "difficult"
+    ],
+    "done": false
+  },
+  {
+    "id": "35",
+    "title": "Create an HSV Color Representation",
+    "category": "Practical",
+    "tags": [
+      "easy"
+    ],
+    "done": false
+  },
+  {
+    "id": "36",
+    "title": "Window Manager",
+    "category": "Practical",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "37",
+    "title": "Basic Relational Database Software",
+    "category": "Practical",
+    "tags": [
+      "fuck you"
+    ],
+    "done": false,
+    "note": "SQL Support, Handle Relationships, Focus on Efficiency"
+  },
+  {
+    "id": "38",
+    "title": "Pixel Editor",
+    "category": "Practical",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "39",
+    "title": "Trivial File Transfer Protocol (TFTP)",
+    "category": "Practical",
+    "tags": [
+      "medium"
+    ],
+    "done": false,
+    "note": "Allow a client to put a file onto a remote host"
+  },
+  {
+    "id": "40",
+    "title": "Markdown (HTML/XML) Editor",
+    "category": "Practical",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "41",
+    "title": "IP Tracking Visualization",
+    "category": "Practical",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "42",
+    "title": "Port Scanner",
+    "category": "Practical",
+    "tags": [
+      "easy"
+    ],
+    "done": false
+  },
+  {
+    "id": "43",
+    "title": "Old School Demo Effect (Plasma, Tunnel, Scrollers, Zoomers, etc...)",
+    "category": "Practical",
+    "tags": [
+      "easy"
+    ],
+    "done": false
+  },
+  {
+    "id": "44",
+    "title": "Fizzbuzz",
+    "category": "Algorithmic",
+    "tags": [
+      "easy"
+    ],
+    "done": false,
+    "note": "BONUS: In Assembly"
+  },
+  {
+    "id": "45",
+    "title": "RPN Calculator",
+    "category": "Algorithmic",
+    "tags": [
+      "easy"
+    ],
+    "done": false
+  },
+  {
+    "id": "47",
+    "title": "Towers of Hanoi",
+    "category": "Algorithmic",
+    "tags": [
+      "easy"
+    ],
+    "done": false
+  },
+  {
+    "id": "48",
+    "title": "Music Visualizer",
+    "category": "Algorithmic",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "49",
+    "title": "Unicode Converter",
+    "category": "Algorithmic",
+    "tags": [
+      "medium"
+    ],
+    "done": false,
+    "note": "Support for UTF-8, 16LE, 32LE, and 32BE"
+  },
+  {
+    "id": "50",
+    "title": "Calculate the first (n) digits of pi",
+    "category": "Algorithmic",
+    "tags": [
+      "easy"
+    ],
+    "done": false
+  },
+  {
+    "id": "51",
+    "title": "Least Squares Fitting Algorithm",
+    "category": "Algorithmic",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "52",
+    "title": "Given an Array of Stocks's values over time, find the period of time where the stocks could have made the most money",
+    "category": "Algorithmic",
+    "tags": [
+      "easy"
+    ],
+    "done": false
+  },
+  {
+    "id": "53",
+    "title": "Highest Prime Factor Calculator",
+    "category": "Algorithmic",
+    "tags": [
+      "easy"
+    ],
+    "done": false
+  },
+  {
+    "id": "54",
+    "title": "Hide and Extract Data in Images (Basic Steganography)",
+    "category": "Algorithmic",
+    "tags": [
+      "medium"
+    ],
+    "done": false,
+    "note": "Bonus: Include .gif support"
+  },
+  {
+    "id": "55",
+    "title": "Web Page Crawler",
+    "category": "Algorithmic",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "56",
+    "title": "Password Generator",
+    "category": "Algorithmic",
+    "tags": [
+      "easy"
+    ],
+    "done": false,
+    "note": "Let User Choose Options"
+  },
+  {
+    "id": "57",
+    "title": "Vigenère cipher encryption/decryption",
+    "category": "Algorithmic",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "58",
+    "title": "Game of Life",
+    "category": "Algorithmic",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "59",
+    "title": "Caesar Cipher Cracker",
+    "category": "Algorithmic",
+    "tags": [
+      "easy"
+    ],
+    "done": false
+  },
+  {
+    "id": "60",
+    "title": "Dijkstra's Algorithm",
+    "category": "Algorithmic",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "61",
+    "title": "ROT 13",
+    "category": "Algorithmic",
+    "tags": [
+      "easy"
+    ],
+    "done": false
+  },
+  {
+    "id": "62",
+    "title": "Program that displays MBR Contents",
+    "category": "Algorithmic",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "63",
+    "title": "Random Name Picker",
+    "category": "Algorithmic",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "64",
+    "title": "Encrypt/Decrypt Text",
+    "category": "Algorithmic",
+    "tags": [
+      "easy"
+    ],
+    "done": false,
+    "note": "Implement at least one from http://rumkin.com/tools/cipher/collection"
+  },
+  {
+    "id": "65",
+    "title": "Youtube To MP3",
+    "category": "Algorithmic",
+    "tags": [
+      "easy"
+    ],
+    "done": false
+  },
+  {
+    "id": "66",
+    "title": "Text to Hexadecimal/Binary",
+    "category": "Algorithmic",
+    "tags": [
+      "easy"
+    ],
+    "done": false
+  },
+  {
+    "id": "67",
+    "title": "Calculate the first 1,000 digits of pi iteratively",
+    "category": "Algorithmic",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "68",
+    "title": "Sierpinski Triangle",
+    "category": "Algorithmic",
+    "tags": [
+      "easy"
+    ],
+    "done": false
+  },
+  {
+    "id": "69",
+    "title": "Mandelbrot Set",
+    "category": "Algorithmic",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "70",
+    "title": "OpenAI Gym Project",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "difficult"
+    ],
+    "done": false
+  },
+  {
+    "id": "71",
+    "title": "AI for Roguelikes",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "72",
+    "title": "Sudoku/n-Puzzle Solver using A* algorithm",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "73",
+    "title": "Connect-4 AI Player using Alpha-Beta Pruning",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "74",
+    "title": "Basic Neural Network - Simulate individual neurons and their connections",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "easy"
+    ],
+    "done": false
+  },
+  {
+    "id": "75",
+    "title": "Real Neural Network - Implement a basic feed-forward neural network using matrix operations for entire layers along with matrix operations for computations.",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "76",
+    "title": "Convolutional Neural Network: Implement a convolutional N.N. for a handwritten digit recognition, test on MNIST dataset",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "medium"
+    ],
+    "done": false,
+    "note": "Use TensorFlow, Theano, etc..."
+  },
+  {
+    "id": "77",
+    "title": "Convolutional Neural Network: Implement your own convolutional neural network for handwritten digit recognition, test on MNIST dataset",
+    "category": "Artificial Intelligence",
+    "tags": [
+      "difficult"
+    ],
+    "done": false,
+    "note": "Without TensorFlow, Theano, etc..."
+  },
+  {
+    "id": "78",
+    "title": "Virtual Machine with a Script that Writes \"Hello, World\"",
+    "category": "Compiler/Interpreter/Debugger",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "79",
+    "title": "Basic Bootloader",
+    "category": "Compiler/Interpreter/Debugger",
+    "tags": [
+      "fuck you"
+    ],
+    "done": false,
+    "note": "with extended file system"
+  },
+  {
+    "id": "80",
+    "title": "Terminal Shell",
+    "category": "Compiler/Interpreter/Debugger",
+    "tags": [
+      "medium"
+    ],
+    "done": false,
+    "note": "Executable Binaries, Pipe System, Redirection, and History. BONUS: Make it a GUI"
+  },
+  {
+    "id": "81",
+    "title": "HTML + JavaScript Debugger",
+    "category": "Compiler/Interpreter/Debugger",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "82",
+    "title": "Write an Interpreted LISP-Like Programming Language",
+    "category": "Compiler/Interpreter/Debugger",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "83",
+    "title": "Make an application that is capable of mounting filesystems from other OSes using the FUSE model",
+    "category": "Compiler/Interpreter/Debugger",
+    "tags": [
+      "difficult"
+    ],
+    "done": false
+  },
+  {
+    "id": "84",
+    "title": "Universal Asynchronous Receiver/Transmitter (UART) Game",
+    "category": "Compiler/Interpreter/Debugger",
+    "tags": [
+      "medium"
+    ],
+    "done": false,
+    "note": "In assembly"
+  },
+  {
+    "id": "85",
+    "title": "Pong Game as a UEFI file in color",
+    "category": "Compiler/Interpreter/Debugger",
+    "tags": [
+      "difficult"
+    ],
+    "done": false,
+    "note": "Hint: http://www.rodsbooks.com/efi-programming/index.html"
+  },
+  {
+    "id": "86",
+    "title": "Design an Esoteric Programming Language",
+    "category": "Compiler/Interpreter/Debugger",
+    "tags": [
+      "difficult"
+    ],
+    "done": false
+  },
+  {
+    "id": "87",
+    "title": "C Compiler",
+    "category": "Compiler/Interpreter/Debugger",
+    "tags": [
+      "difficult"
+    ],
+    "done": false
+  },
+  {
+    "id": "88",
+    "title": "Turing Machine Simulator",
+    "category": "Compiler/Interpreter/Debugger",
+    "tags": [
+      "difficult"
+    ],
+    "done": false
+  },
+  {
+    "id": "89",
+    "title": "Read, Evaluate, Print Loop using a compiled language",
+    "category": "Compiler/Interpreter/Debugger",
+    "tags": [
+      "difficult"
+    ],
+    "done": false
+  },
+  {
+    "id": "90",
+    "title": "Static Website Generator (Scriptable Templates + Content -> HTML and CSS)",
+    "category": "Compiler/Interpreter/Debugger",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "91",
+    "title": "Chip-8 Emulator",
+    "category": "Emulation/Modeling",
+    "tags": [
+      "medium"
+    ],
+    "done": false,
+    "note": "Hard Mode: Cached Interpreter. Fuck You: Dynamic Recompiler, use dynarec/jit library"
+  },
+  {
+    "id": "93",
+    "title": "Constructive Solid Geometry",
+    "category": "Emulation/Modeling",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "94",
+    "title": "Ray Tracer",
+    "category": "Emulation/Modeling",
+    "tags": [
+      "difficult"
+    ],
+    "done": false
+  },
+  {
+    "id": "95",
+    "title": "Real-Time Fast Fourier Transform Spectrum Visualizer",
+    "category": "Emulation/Modeling",
+    "tags": [
+      "difficult"
+    ],
+    "done": false
+  },
+  {
+    "id": "96",
+    "title": "Generate a Complimentary Color from any input color",
+    "category": "Emulation/Modeling",
+    "tags": [
+      "easy"
+    ],
+    "done": false
+  },
+  {
+    "id": "97",
+    "title": "Generate a 5-Color Scheme from the most dominant tones in any image",
+    "category": "Emulation/Modeling",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "98",
+    "title": "General Lambert's-Problem Solver",
+    "category": "Emulation/Modeling",
+    "tags": [
+      "fuck you"
+    ],
+    "done": false,
+    "note": "At least it's not rocket science... Oh wait, it actually is"
+  },
+  {
+    "id": "99",
+    "title": "TI-86 Emulator",
+    "category": "Emulation/Modeling",
+    "tags": [
+      "difficult"
+    ],
+    "done": false,
+    "note": "Bonus: Include the Option to Create Programs"
+  },
+  {
+    "id": "100",
+    "title": "N-Body Simulator, with particles having a certain mass and radius depending on the mass that merge if they collide",
+    "category": "Emulation/Modeling",
+    "tags": [
+      "medium"
+    ],
+    "done": false,
+    "note": "Bonus: Include a GUI where you can place particles"
+  },
+  {
+    "id": "101",
+    "title": "Eulerian Path",
+    "category": "Emulation/Modeling",
+    "tags": [
+      "easy"
+    ],
+    "done": false
+  },
+  {
+    "id": "102",
+    "title": "Draw a spinning 3D Cube",
+    "category": "Emulation/Modeling",
+    "tags": [
+      "easy"
+    ],
+    "done": false
+  },
+  {
+    "id": "103",
+    "title": "Cellular Textures",
+    "category": "Emulation/Modeling",
+    "tags": [
+      "easy"
+    ],
+    "done": false
+  },
+  {
+    "id": "104",
+    "title": "Knight's Tour",
+    "category": "Games",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "105",
+    "title": "Monster Raising/Breeding Simulator",
+    "category": "Games",
+    "tags": [
+      "difficult"
+    ],
+    "done": false
+  },
+  {
+    "id": "106",
+    "title": "Tetris",
+    "category": "Games",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "107",
+    "title": "Snake",
+    "category": "Games",
+    "tags": [
+      "easy"
+    ],
+    "done": false
+  },
+  {
+    "id": "108",
+    "title": "Pipe Dreams",
+    "category": "Games",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "109",
+    "title": "Pac Man. With Different Behaviors for each Ghost",
+    "category": "Games",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "110",
+    "title": "Dragon Quest / Basic RPG Engine",
+    "category": "Games",
+    "tags": [
+      "difficult"
+    ],
+    "done": false
+  },
+  {
+    "id": "111",
+    "title": "Rock Paper Scissors",
+    "category": "Games",
+    "tags": [
+      "easy"
+    ],
+    "done": false
+  },
+  {
+    "id": "112",
+    "title": "First-Person Engine in OpenGL (Walking, Looking Around, Jumping on Obstacles)",
+    "category": "Games",
+    "tags": [
+      "difficult"
+    ],
+    "done": false,
+    "note": "BONUS: VR Compatibility"
+  },
+  {
+    "id": "113",
+    "title": "Shuffle a Deck of Cards",
+    "category": "Games",
+    "tags": [
+      "medium"
+    ],
+    "done": false,
+    "note": "Include a Visualization"
+  },
+  {
+    "id": "114",
+    "title": "Simulate a game of Tag using a multi-agent system",
+    "category": "Games",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "115",
+    "title": "Wolfenstein Clone",
+    "category": "Games",
+    "tags": [
+      "difficult"
+    ],
+    "done": false,
+    "note": "FPS, two-dimensional map that appears to be 3-D. If you need a starting point, search for bisquit's video about DOOM-like Engines"
+  },
+  {
+    "id": "116",
+    "title": "Scorched Earth Clone",
+    "category": "Games",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "117",
+    "title": "Minesweeper",
+    "category": "Games",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "118",
+    "title": "An Audio/Visual 64KB Demonstration",
+    "category": "Games",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "119",
+    "title": "Sudoku",
+    "category": "Games",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "120",
+    "title": "Danmaku (Bullet Hell) Engine",
+    "category": "Games",
+    "tags": [
+      "difficult"
+    ],
+    "done": false
+  },
+  {
+    "id": "121",
+    "title": "Roguelike Engine/Dungeon Generator",
+    "category": "Games",
+    "tags": [
+      "difficult"
+    ],
+    "done": false
+  },
+  {
+    "id": "122",
+    "title": "Design a Game Engine in Unity",
+    "category": "Games",
+    "tags": [
+      "easy"
+    ],
+    "done": false
+  },
+  {
+    "id": "123",
+    "title": "Yahtzee",
+    "category": "Games",
+    "tags": [
+      "easy"
+    ],
+    "done": false
+  },
+  {
+    "id": "124",
+    "title": "Oil Panic",
+    "category": "Games",
+    "tags": [
+      "easy"
+    ],
+    "done": false
+  },
+  {
+    "id": "125",
+    "title": "Chess",
+    "category": "Games",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "126",
+    "title": "Go",
+    "category": "Games",
+    "tags": [
+      "difficult"
+    ],
+    "done": false,
+    "note": "No AI Necessary"
+  },
+  {
+    "id": "127",
+    "title": "Connect Four",
+    "category": "Games",
+    "tags": [
+      "easy"
+    ],
+    "done": false
+  },
+  {
+    "id": "128",
+    "title": "Mastermind",
+    "category": "Games",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "129",
+    "title": "Missile Command Game",
+    "category": "Games",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "130",
+    "title": "Tron",
+    "category": "Games",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "131",
+    "title": "Breakout",
+    "category": "Games",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "132",
+    "title": "Simon",
+    "category": "Games",
+    "tags": [
+      "easy"
+    ],
+    "done": false
+  },
+  {
+    "id": "133",
+    "title": "LISP Interpreter",
+    "category": "Compiler/Interpreter/Debugger",
+    "tags": [
+      "difficult"
+    ],
+    "done": false
+  },
+  {
+    "id": "134",
+    "title": "Ulam Spiral",
+    "category": "Algorithmic",
+    "tags": [
+      "easy"
+    ],
+    "done": false
+  },
+  {
+    "id": "135",
+    "title": "Bellman-Ford Simulation with at least Five Vertices",
+    "category": "Practical",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "136",
+    "title": "Matrix Arithmetic",
+    "category": "Practical",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "137",
+    "title": "File Compression Utility",
+    "category": "Practical",
+    "tags": [
+      "medium"
+    ],
+    "done": false,
+    "note": "Make it GUI"
+  },
+  {
+    "id": "138",
+    "title": "PDF Tagger",
+    "category": "Practical",
+    "tags": [
+      "easy"
+    ],
+    "done": false
+  },
+  {
+    "id": "139",
+    "title": "Nonogram Generator and Solver",
+    "category": "Practical",
+    "tags": [
+      "difficult"
+    ],
+    "done": false
+  },
+  {
+    "id": "140",
+    "title": "Calculate Dot and Cross Product of Two Vectors",
+    "category": "Practical",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "141",
+    "title": "Bismuth Fractal",
+    "category": "Practical",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "142",
+    "title": "Seam Carving",
+    "category": "Practical",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "143",
+    "title": "Bayesian Filter",
+    "category": "Practical",
+    "tags": [
+      "medium"
+    ],
+    "done": false
+  },
+  {
+    "id": "144",
+    "title": "WMS viewer that isn't web based",
+    "category": "Practical",
+    "tags": [
+      "difficult"
+    ],
+    "done": false
+  }
 ]

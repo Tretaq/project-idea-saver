@@ -4,7 +4,7 @@ import {loadProjects, saveProjects} from './storage'
 import AddForm from './components/AddForm';
 import ProjectCard from './components/ProjectCard';
 import './App.css'
-
+// 
 export default function App(){
           const [projects, setProjects] = useState<Project[]>(loadProjects());
           const [query, setQuery] = useState<string>("");
