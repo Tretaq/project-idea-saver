@@ -29,6 +29,23 @@ export default function App(){
                 (p.title + " " + p.category + " " + p.tags.join(" ")).toLowerCase().includes(q)
               );
             }, [projects, query, filter, activeTag]);
+            const exportJson = () => {
+              const blob = new Blob([JSON.stringify(projects, null, 2)], {type: "application/json"});
+              const a = document.createElement("a");
+              a.href = URL.createObjectURL(blob);
+              a.download = "projects.json";
+              a.click();
+              URL.revokeObjectURL(a.href);
+            };
+            const importJson = async (file: File) => {
+              try{
+                const data = JSON.parse(await file.text());
+                if(Array.isArray(data) && data.every(p => p.id && p.title)) setProjects(data);
+                else alert("Invalid file");
+              } catch {
+                alert("Invalid file");
+              }
+            };
             
             
 
