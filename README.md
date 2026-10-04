@@ -53,7 +53,7 @@ Every `id` must be unique. You must have at least an id and title
 ## Local Storage 
 On first launch app loads the starting project into browsers local storage. After that only local storage is used.
 
-Changes are saved automatically in the browser only. JSON file is **not** updated when you add projects. to save your data to a file, use ** Export JSON* in the settings.
+Changes are saved automatically in the browser only. JSON file is **not** updated when you add projects. to save your data to a file, use **Export JSON** in the settings.
 
 Clearing your browser's data deletes your projects, so please export a backup. 
 
