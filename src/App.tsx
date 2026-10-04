@@ -4,9 +4,9 @@ import {loadProjects, saveProjects} from './storage'
 import AddForm from './components/AddForm';
 import ProjectCard from './components/ProjectCard';
 import './App.css'
-import { FileBraces } from 'lucide-react';
 import SettingsModal from './components/SettingsModal';
-import seed from "./seed.json"
+import seed from "./seed.json";
+import { Settings } from 'lucide-react'
 // TODO add dark mode and some colors make a seperate section and icon for json 
 // TODO like the click on tag works shoud add some basic or not even basic tags so u can scan true them 
 export default function App(){
@@ -61,9 +61,10 @@ export default function App(){
             };
           return(
             <div className="app">
-              <h1>Project Saver</h1>
-              <div className='toolbar'>
-                <button onClick={() => setShowSettings(true)}>Settings</button>
+              <div className='flex justify-between w-full'>
+              <h1>Project Idea Saver</h1>
+              <div className=''>
+                <button onClick={() => setShowSettings(true)}><Settings /></button>
               </div>
               {showSettings && (
                 <SettingsModal
@@ -75,6 +76,7 @@ export default function App(){
                 
                 />
               )}
+              </div>
               <AddForm onAdd={add} />
               <div className="toolbar">
                 <input placeholder='Search...' value={query} onChange={e => setQuery(e.target.value)} />

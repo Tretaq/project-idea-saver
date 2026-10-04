@@ -16,9 +16,11 @@ export default function ProjectCard({project , onToggle, onDelete, onTagClick }:
         <h3>{project.title}</h3>
         <button onClick={() => confirm("Delete?") && onDelete(project.id)}>X</button>
         </div>
+        {/* where is the red yellow blue purpleeeeee */}
         <small>{project.category}</small>
         <div className="tags">
             {project.tags.map(t => (
+                
             <span key={t} className="tag" onClick={() => onTagClick(t)}>#{t}</span>
         ))}
         </div>
