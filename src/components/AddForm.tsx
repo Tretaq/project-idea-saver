@@ -3,7 +3,7 @@ import { useState, type SyntheticEvent} from "react";
 type Props = {onAdd: (title: string, category: string, tags: string[]) => void};
 export default function AddForm({onAdd }: Props){
     const [title, setTitle] = useState("");
-    const [category, setCategory] = useState("Practical")
+    const [category, setCategory] = useState("")
     const [tags, setTags] = useState("");
 
     const submit = (e: SyntheticEvent<HTMLFormElement>) => {

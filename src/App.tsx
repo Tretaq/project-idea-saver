@@ -74,7 +74,7 @@ export default function App(){
                   <button onClick={exportJson} className='inline-flex  items-center gap-1'>Export<FileBraces /></button> 
                   <label htmlFor="inputbut" className='inline-flex  items-center gap-1'>Upload <FileBraces/></label><input className='hidden' id='inputbut' type="file" accept='.json' onChange={e => e.target.files?.[0] && importJson(e.target.files[0])} />
                   
-
+                  
                 </div>
 
 
