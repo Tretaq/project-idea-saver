@@ -4,7 +4,9 @@ import {loadProjects, saveProjects} from './storage'
 import AddForm from './components/AddForm';
 import ProjectCard from './components/ProjectCard';
 import './App.css'
-// 
+import { FileBraces } from 'lucide-react';
+// TODO add dark mode and some colors make a seperate section and icon for json 
+// TODO like the click on tag works shoud add some basic or not even basic tags so u can scan true them 
 export default function App(){
           const [projects, setProjects] = useState<Project[]>(loadProjects());
           const [query, setQuery] = useState<string>("");
@@ -21,7 +23,7 @@ export default function App(){
           }
           const remove = (id:string) => setProjects(p => p.filter(x => x.id !== id));
 
-            const visible = useMemo(() => {
+            const visible = useMemo(() => { // use memo is for saving components so they dont render a second time 
               const q = query.toLowerCase();
               return projects.filter(p =>
                 (filter === "all" || (filter === "done") === p.done) &&
@@ -66,9 +68,11 @@ export default function App(){
                       <ProjectCard key={p.id} project={p} onToggle={toggle} onDelete={remove} onTagClick={setActiveTag} />
                   ))}
                   {visible.length === 0 && <p>No projects found.</p>}
+
                 </div>
                 <div className='toolbar'>
-                  <button onClick={exportJson}>Export JSON</button>
+                  <button onClick={exportJson}>Export<FileBraces /></button> 
+                  {/* add an icon JSON*/}
                   <input type="file" accept='.json' onChange={e => e.target.files?.[0] && importJson(e.target.files[0])} />
                   
 
