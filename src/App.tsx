@@ -70,10 +70,9 @@ export default function App(){
                   {visible.length === 0 && <p>No projects found.</p>}
 
                 </div>
-                <div className='toolbar'>
-                  <button onClick={exportJson}>Export<FileBraces /></button> 
-                  {/* add an icon JSON*/}
-                  <input type="file" accept='.json' onChange={e => e.target.files?.[0] && importJson(e.target.files[0])} />
+                <div className='flex flex-col text-sm/8' >
+                  <button onClick={exportJson} className='inline-flex  items-center gap-1'>Export<FileBraces /></button> 
+                  <label htmlFor="inputbut" className='inline-flex  items-center gap-1'>Upload <FileBraces/></label><input className='hidden' id='inputbut' type="file" accept='.json' onChange={e => e.target.files?.[0] && importJson(e.target.files[0])} />
                   
 
                 </div>
