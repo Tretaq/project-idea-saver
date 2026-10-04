@@ -10,6 +10,8 @@ The app comes with a list of project ideas.
 
 ## Demo
 
+https://project-idea-saver.vercel.app/
+
 ## Features
 
 - Add and delete project ideas
@@ -46,7 +48,7 @@ The app comes with a list of project ideas.
 | `done`     | boolean   | Whether the project is already finished.                                                             |
 | `note`     | string    | Optional. Extra details about the project.                                                           |
 
-Every `id` must be unique. Yu must have at least an id and title
+Every `id` must be unique. You must have at least an id and title
 
 ## Local Storage 
 On first launch app loads the starting project into browsers local storage. After that only local storage is used.
