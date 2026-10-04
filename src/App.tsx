@@ -18,9 +18,9 @@ export default function App(){
 
           useEffect(() => {saveProjects(projects)}, [projects]);// zapisuje do local storage jak się zmieni projects :< WHY
 
-          const add = (title: string , category: string, tags: string[]) => 
+          const add = (title: string , category: string, tags: string[], note: string) => 
           {
-            setProjects(p => [...p, {id: crypto.randomUUID(), title, category, tags, done:false}])
+            setProjects(p => [...p, {id: crypto.randomUUID(), title, category, tags, done:false, ...(note && {note})}])
           }
           const toggle = (id: string) => {
             setProjects(p => p.map(x => (x.id === id? {...x, done: !x.done} : x)))

@@ -4,5 +4,6 @@ export type Project = {
     category: string;
     tags: string[];
     done: boolean;
+    note?: string;
 }
 export type Filter = "all" | "todo" | "done"

@@ -1,10 +1,11 @@
 import { useState, type SyntheticEvent} from "react";
 
-type Props = {onAdd: (title: string, category: string, tags: string[]) => void};
+type Props = {onAdd: (title: string, category: string, tags: string[],note: string) => void};
 export default function AddForm({onAdd }: Props){
     const [title, setTitle] = useState("");
     const [category, setCategory] = useState("")
     const [tags, setTags] = useState("");
+    const [note, setNote] = useState("");
 
     const submit = (e: SyntheticEvent<HTMLFormElement>) => {
         e.preventDefault();// stops from relading after sending shit submit
@@ -12,10 +13,12 @@ export default function AddForm({onAdd }: Props){
         onAdd(
             title.trim(),
             category.trim() || "Other",
-            tags.split(",").map(t => t.trim().toLowerCase()).filter(Boolean)
+            tags.split(",").map(t => t.trim().toLowerCase()).filter(Boolean),
+            note.trim()
         );
         setTitle("")
         setTags("")
+        setNote("")
 
     };
     return(
@@ -23,6 +26,7 @@ export default function AddForm({onAdd }: Props){
             <input  placeholder="Title" value={title} onChange={e =>setTitle(e.target.value)} />
             <input placeholder="Category" value={category} onChange={e => setCategory(e.target.value)}/>
             <input placeholder="tags, comma, separated" value={tags} onChange={e => setTags(e.target.value)}/>
+            <input placeholder="Note (optiona)" value={note} onChange={e => setNote(e.target.value)} />
             <button type="submit">Add</button>
         </form>
     )
